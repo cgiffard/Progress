@@ -3,6 +3,8 @@
 Little JS+CSS progress bar for your dashboard. Doesn't try to do everything in
 the known universe. You could change the gradient colours to suit your app.
 
+![Progress Example Screenshot](https://raw.github.com/cgiffard/Progress/master/screenshot.png)
+
 ## Example
 
 ```javascript
