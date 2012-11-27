@@ -40,7 +40,12 @@
 			element.html = function(html) {
 				element.innerHTML = html;
 				return element;
-			}
+			};
+			
+			element.setStyle = function(style,value) {
+				element.style[style] = value;
+				return element;
+			};
 			
 			return element;
 		}
@@ -53,12 +58,14 @@
 		self.ui.halo =
 			c("div")
 				.setClass("halo")
-				.appendTo(self.ui);
+				.appendTo(self.ui)
+				.setStyle("width",(self.width + 10) + "px");
 		
 		self.ui.body =
 			c("div")
 				.setClass("body")
-				.appendTo(self.ui);
+				.appendTo(self.ui)
+				.setStyle("width",self.width + "px");
 		
 		self.ui.body.overlay =
 			c("div")
